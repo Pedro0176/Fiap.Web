@@ -1,0 +1,21 @@
+﻿@model Funcionario
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+@** 
+    @if ()
+*@
+
+<h1>Editar</h1>
+    
+<form asp-action="editar">
+
+    <input asp-for="Codigo"/>
+    <!-- Adiciona o conteúdo do arquivo _Form.cshtml-->
+    <partial name="_Form.cshtml" />
+    <input type="submit" value="Editar" class="btn btn-outline-success" />
+    <a asp-action="index" class="btn btn-outline-dark">Cancelar</a>
+</form>
+

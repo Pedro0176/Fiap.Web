@@ -1,0 +1,17 @@
+﻿@model Funcionario
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+
+<tds texto="@TempData["msg"]"></tds>
+
+<form asp-action="Cadastrar" asp-controller="Funcionario">
+
+    <!-- Adiciona o conteúdo da página _Form.cshtml-->
+    <partial name="_Form" />
+    <input type="submit" value="Cadastrar" class="btn btn-outline-primary" />
+    <a asp-action="index" class="btn btn-outline-dark">Funcionários</a>
+</form>
